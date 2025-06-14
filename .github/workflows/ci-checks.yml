@@ -30,7 +30,7 @@ jobs:
 
       - name: Run TypeScript Check
         run: npm run type-check
-      
+        
   unit-test:
     runs-on: ubuntu-latest
 

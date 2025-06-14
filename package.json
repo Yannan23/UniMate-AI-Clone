@@ -6,9 +6,24 @@
     "node": "22"
   },
   "scripts": {
-    "lint": "echo 'no lint specified'",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "format:check": "echo 'no format:check specified'",
     "type-check": "echo 'no type-check specified'",
     "test": "echo 'no commitlint specified'"
+  },
+  "devDependencies": {
+    "@cspell/eslint-plugin": "^9.0.2",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.28.0",
+    "@stylistic/eslint-plugin": "^4.4.1",
+    "eslint": "^9.28.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-promise": "^7.2.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-regex": "^1.10.0",
+    "eslint-plugin-testing-library": "^7.5.2",
+    "eslint-plugin-vitest": "^0.5.4",
+    "typescript-eslint": "^8.34.0"
   }
 }
