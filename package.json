@@ -1,0 +1,14 @@
+{
+  "name": "unimate-ai",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "lint": "echo 'no lint specified'",
+    "format:check": "echo 'no format:check specified'",
+    "type-check": "echo 'no type-check specified'",
+    "test": "echo 'no commitlint specified'"
+  }
+}
