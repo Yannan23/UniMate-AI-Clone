@@ -3,16 +3,28 @@
   "version": "0.1.0",
   "private": true,
   "engines": {
-    "node": "22"
+    "node": ">=22.0.0",
+    "npm": ">=10.0.0"
   },
   "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "test:run": "vitest run",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format:check": "echo 'no format:check specified'",
     "type-check": "echo 'no type-check specified'",
-    "test": "echo 'no commitlint specified'",
     "prepare": "husky",
     "commitlint": "commitlint --edit"
+  },
+  "dependencies": {
+    "next": "15.3.3",
+    "normalize.css": "^8.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.8.1",
@@ -28,6 +40,22 @@
     "eslint-plugin-regex": "^1.10.0",
     "eslint-plugin-testing-library": "^7.5.2",
     "eslint-plugin-vitest": "^0.5.4",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/node": "^20",
+    "@types/react": "^19.1.7",
+    "@types/react-dom": "^19.1.6",
+    "@typescript-eslint/eslint-plugin": "^8.34.0",
+    "@typescript-eslint/parser": "^8.34.0",
+    "@vitejs/plugin-react": "^4.5.2",
+    "@vitest/ui": "^3.2.3",
+    "eslint-config-next": "^15.3.3",
+    "eslint-plugin-next": "^0.0.0",
+    "jsdom": "^26.1.0",
+    "ts-node": "^10.9.2",
+    "vitest": "^3.2.3",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.1",
     "typescript": "^5.8.3",
